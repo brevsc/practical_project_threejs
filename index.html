@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cena 3D com Three.js</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="info">
+        <h2>Cena 3D com Three.js</h2>
+        <p>Use o mouse para girar a câmera.</p>
+    </div>
+    
+    <div class="panel">
+        <h3>Controles de Objeto</h3>
+        <div class="control-row">
+            <label for="object-select">Objeto:</label>
+            <select id="object-select">
+                <option value="cube">Cubo</option>
+                <option value="sphere">Esfera</option>
+                <option value="cylinder">Cilindro</option>
+            </select>
+        </div>
+        <div class="control-row">
+            <label for="color-picker">Cor:</label>
+            <input type="color" id="color-picker" value="#3498db">
+        </div>
+        <div class="control-row">
+            <label for="scale-slider">Escala:</label>
+            <input type="range" id="scale-slider" min="0.5" max="2" step="0.1" value="1">
+            <span id="scale-value">1.0</span>
+        </div>
+        <div class="control-row">
+            <label for="texture-select">Textura:</label>
+            <select id="texture-select">
+                <option value="none">Nenhuma</option>
+                <option value="brick">Tijolo</option>
+                <option value="wood">Madeira</option>
+            </select>
+        </div>
+        <div class="control-row">
+            <button id="reset-btn">Resetar</button>
+            <button id="rotate-btn">Girar</button>
+        </div>
+    </div>
+
+    <div class="effects-panel">
+        <h3>Efeitos</h3>
+        <div class="checkbox-row">
+            <input type="checkbox" id="bloom-effect">
+            <label for="bloom-effect">Bloom</label>
+        </div>
+        <div class="checkbox-row">
+            <input type="checkbox" id="outline-effect">
+            <label for="outline-effect">Contorno</label>
+        </div>
+        <div class="control-row">
+            <label for="ambient-slider">Luz Ambiente:</label>
+            <input type="range" id="ambient-slider" min="0" max="1" step="0.1" value="0.5">
+        </div>
+    </div>
+
+    <div id="controls">
+        <p>Teclas W/A/S/D para mover a câmera | Mouse direito para deslocar a visualização</p>
+        <p>Clique em um objeto para selecioná-lo</p>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+</body>
+</html>

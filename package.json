@@ -1,0 +1,21 @@
+{
+  "name": "three_js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "three": "^0.176.0"
+  },
+  "devDependencies": {
+    "vite": "^6.3.5"
+  }
+}
